@@ -39,15 +39,7 @@ const LandingPage: React.FC = () => {
         damping: 15
       }
     },
-    hover: {
-      y: -20,
-      scale: 1.05,
-      rotateY: 5,
-      transition: {
-        duration: 0.3,
-        ease: "easeOut" as const
-      }
-    },
+   
     tap: {
       scale: 0.98,
       transition: {
@@ -158,7 +150,7 @@ const LandingPage: React.FC = () => {
          transition={{ duration: 0.6, delay: 0.05 }}
             className="text-center md:text-center alexandria text-[#727272] flex justify-center flex-col items-center mt-10 md:mt-20"
           >
-            <p className="w-[86%] mb-3 lg:mb-0 md:w-[66%]">
+            <p className="w-[86%] mb-3 lg:mb-0 md:w-[66%] -">
               We empower aspiring creators and digital professionals with
               hands-on training, cutting-edge tools, and a collaborative
               community to bridge the gap between learning and real-world
@@ -188,7 +180,7 @@ const LandingPage: React.FC = () => {
           {/* First Card - Enhanced Animation */}
           <motion.div
             variants={cardVariants}
-            whileHover="hover"
+           
             whileTap="tap"
             className="group relative"
           >
@@ -257,7 +249,7 @@ const LandingPage: React.FC = () => {
           >
             {/* Floating particles effect */}
             <motion.div
-              className="absolute inset-0 pointer-events-none"
+              className="absolute inset-0 pointer-events-none "
               variants={floatingVariants}
               initial="initial"
               animate="float"

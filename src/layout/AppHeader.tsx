@@ -54,7 +54,6 @@ const AppHeader: React.FC<AppHeaderProps> = () => {
       document.removeEventListener("keydown", handleKeyDown);
     };
   }, []);
-  
 
   return (
     <motion.header
@@ -70,7 +69,6 @@ const AppHeader: React.FC<AppHeaderProps> = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="flex items-center justify-between w-full gap-4 py-4 lg:py-5"
         >
-          
           {/* Mobile Menu Button */}
           <AnimatePresence>
             <div className="flex items-center lg:hidden order-last">
@@ -154,39 +152,39 @@ const AppHeader: React.FC<AppHeaderProps> = () => {
             </Menu>
           </div>
 
-            {/* Right Side Actions */}
-            <div className="flex items-center gap-3">
-              {/* Auth Buttons */}
+          {/* Right Side Actions */}
+          <div className="flex items-center gap-3">
+            {/* Auth Buttons */}
+            <motion.div
+              className="hidden sm:flex items-center gap-3"
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+            >
               <motion.div
-                className="hidden sm:flex items-center gap-3"
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 0.4 }}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
               >
-                <motion.div
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
+                <Link
+                  to="/login"
+                  className="px-6 py-2 text-sm font-normal alexandria bg-themePrimary text-white border border-themePrimary rounded-full hover:bg-blue-50 hover:text-themePrimary transition-all duration-200"
                 >
-                  <Link
-                    to="/login"
-                    className="px-6 py-2 text-sm font-normal alexandria bg-themePrimary text-white border border-themePrimary rounded-full hover:bg-blue-50 hover:text-themePrimary transition-all duration-200"
-                  >
-                    Login
-                  </Link>
-                </motion.div>
-                <motion.div
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <Link
-                    to="/signup"
-                    className="px-6 py-2 text-sm font-normal alexandria text-themePrimary bg-white border border-themePrimary rounded-full hover:bg-blue-50 hover:text-themePrimary transition-all duration-200"
-                  >
-                    Sign up
-                  </Link>
-                </motion.div>
+                  Login
+                </Link>
               </motion.div>
-            </div>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Link
+                  to="/signup"
+                  className="px-6 py-2 text-sm font-normal alexandria text-themePrimary bg-white border border-themePrimary rounded-full hover:bg-blue-50 hover:text-themePrimary transition-all duration-200"
+                >
+                  Sign up
+                </Link>
+              </motion.div>
+            </motion.div>
+          </div>
         </motion.div>
       </div>
     </motion.header>
@@ -196,6 +194,3 @@ const AppHeader: React.FC<AppHeaderProps> = () => {
 export default AppHeader;
 
 /* -------------------- Dropdown Components -------------------- */
-
-
-

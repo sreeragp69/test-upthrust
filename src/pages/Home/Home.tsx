@@ -16,14 +16,14 @@ const Home = () => {
     <>
       <LandingPage />
       <AboutSection />
-      <FeatureHighlights />
+      {/* <FeatureHighlights /> */}
       {/* <CourseSection /> */}
-      <WhyUs />
-      <LearnLatest />
-      <UpthrustAchievement />
-      {/* <TestimonialsSection /> */}
-      <BlogSection />
-      <CentreSection />
+      {/* <WhyUs /> */}
+      {/* <LearnLatest /> */}
+      {/* <UpthrustAchievement /> */}
+      {/* <TestimonialsSection />  */}
+      {/* <BlogSection /> */}
+      {/* <CentreSection /> */}
       {/* <Subscribe /> */}
     </>
   );

@@ -28,7 +28,7 @@ const LayoutContent: React.FC = () => {
       {isMobileOpen && <Backdrop onClick={() => setIsMobileOpen(false)} />}
 
       {/* Main Content */}
-      <div className="flex-1 transition-all duration-300 ease-in-out">
+      <div className="flex-1 transition-all bg-themeBackgroundColor duration-300 ease-in-out">
         {loading ? <AppHeaderSkeleton /> : <AppHeader />}
 
         <div className="p-2 md:p-6 bg-themeBackgroundColor sm:p-4 pb-0! mx-auto max-w-(--breakpoint-2xl)">

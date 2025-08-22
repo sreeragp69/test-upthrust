@@ -167,7 +167,6 @@ out/
 
 # Upload directories
 uploads/
-public/uploads/
 temp/
 
 # SSL certificates

@@ -95,7 +95,7 @@ const AboutSection = () => {
           >
             <img
               className="w-full h-auto object-cover"
-              src="images/svg/Rectangle 6038.svg"
+              src="images/svg/Rectangle6038.png"
               alt="About section main"
               loading="lazy"
             />
@@ -114,7 +114,7 @@ const AboutSection = () => {
             >
               <img
                 className="w-full h-full object-cover"
-                src="images/svg/Rectangle 6040.svg"
+                src="images/svg/Rectangle6040.png"
                 alt="About section secondary 1"
                 loading="lazy"
               />
@@ -129,7 +129,7 @@ const AboutSection = () => {
             >
               <img
                 className="w-full h-full object-cover"
-                src="images/svg/Rectangle 6041.svg"
+                  src="images/svg/Rectangle6041.png"
                 alt="About section secondary 2"
                 loading="lazy"
               />
@@ -152,7 +152,7 @@ const AboutSection = () => {
           >
             <img
               className="w-full h-full object-cover"
-              src="images/svg/aboutSecimg4.svg"
+              src="images/svg/aboutSecimg4.png"
               alt="About section illustration"
               loading="lazy"
             />
